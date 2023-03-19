@@ -22,9 +22,9 @@ window.addEventListener("scroll", function(){
     const halfwayCounted = 1-(scrollFraction*8)
     content.style.opacity = halfwayCounted;
     console.log(halfwayCounted)
-    content2.style.transition = 1.5 + "s";
-    content3.style.transition = 1 + "s";
-    content4.style.transition = 1 + "s";
+    content2.style.transition = .8 + "s";
+    content3.style.transition = .8 + "s";
+    content4.style.transition = .8 + "s";
 
   
     if(halfwayCounted <= -1){

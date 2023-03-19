@@ -11,6 +11,7 @@ window.addEventListener("scroll", function(){
     const content4 = document.querySelector(".c4");
     const background = document.querySelector(".background");
     const header = document.querySelector("header");
+    const arrow = document.querySelector(".c5");
     let scrollPosition = window.pageYOffset;
     let banner1 = document.querySelector(".banner1")
 
@@ -36,13 +37,13 @@ window.addEventListener("scroll", function(){
         content3.style.removeProperty("top");
     }
     if(halfwayCounted <= -3){
-        content2.style.transition = 1.5 + "s";
+        content2.style.transition = .5 + "s";
         content2.style.top = "25%";
         content2.style.opacity = "0";
     }
     if(halfwayCounted <= -4){
         content3.style.top = "40%";
-        content3.style.transition = 2 + "s";
+        content3.style.transition = 1 + "s";
         content4.style.top = "55%";
         content4.style.opacity = "1";
     } else if(halfwayCounted <= -1){
@@ -67,6 +68,13 @@ window.addEventListener("scroll", function(){
         header.style.transition = ".5s";
         header.style.opacity = "0";
       }
+    if (halfwayCounted <= 0.9) {
+        arrow.style.opacity = halfwayCounted;
+        arrow.style.transition = ".5s"
+    }else{
+        arrow.style.opacity = "1";
+        
+    }
 })
 
 

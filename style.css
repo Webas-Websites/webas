@@ -221,7 +221,7 @@ transform: rotate(360deg);
 
 
 .banner1{
-    height: 600vh;
+    height: 400vh;
     width: 100vw;
     color: white;
 
@@ -253,6 +253,27 @@ transform: rotate(360deg);
     font-size: 4vw;
     top: 55vh;
  }
+.arrow.material-symbols-outlined{
+    font-size: 4rem;
+    top: 90vh;
+    left: 50%;
+    animation: jump 0.8s infinite alternate-reverse;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-50px);
+      }
+      
+  }
+  .hidden{
+    opacity: 0;
+    transition: 1s;
+  }
+
  
  .c3{
     font-size: 3vw;

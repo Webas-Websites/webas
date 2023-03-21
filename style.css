@@ -256,7 +256,7 @@ transform: rotate(360deg);
 .arrow.material-symbols-outlined{
     font-size: 4rem;
     top: 80vh;
-    left: 40%;
+    left: 45%;
     transform: translate(-50%, -50%);
     animation: jump 0.8s infinite alternate-reverse;
 }

@@ -255,21 +255,33 @@ transform: rotate(360deg);
  }
 .arrow.material-symbols-outlined{
     font-size: 4rem;
-    top: 80vh;
-    left: 45%;
-    transform: translate(-50%, -50%);
-    animation: jump 0.8s infinite alternate-reverse;
+    bottom: 10vh;
+    right: 50%;
+    transform: translate(50%, 50%);
+    
 }
 
-@keyframes jump {
+.arrow-text {
+    color: white;
+    z-index: 1;
+    font-family:'Times New Roman', Times, serif;
+    position: fixed;
+    bottom: 15vh;
+    right: 50%;
+    transform: translate(50%, 50%);
+    font-size: 1rem;
+     
+  }
+
+ @keyframes jump {
     0% {
-        transform: translateY(0);
+        opacity: 1;
       }
       100% {
-        transform: translateY(-50px);
+        opacity: 0.3;
       }
       
-  }
+  } 
   .hidden{
     opacity: 0;
     transition: 1s;

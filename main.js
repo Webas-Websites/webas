@@ -12,6 +12,7 @@ window.addEventListener("scroll", function(){
     const background = document.querySelector(".background");
     const header = document.querySelector("header");
     const arrow = document.querySelector(".c5");
+    const arrow_text = document.querySelector(".c6")
     let scrollPosition = window.pageYOffset;
     let banner1 = document.querySelector(".banner1")
 
@@ -70,10 +71,15 @@ window.addEventListener("scroll", function(){
       }
     if (halfwayCounted <= 0.9) {
         arrow.style.opacity = halfwayCounted;
-        arrow.style.transition = ".5s"
+        arrow.style.transition = ".5s";
+        arrow_text.style.opacity = halfwayCounted;
+        arrow_text.style.transition = ".5s";
+        arrow.style.removeProperty("animation")
+        arrow_text.style.removeProperty("animation")
     }else{
         arrow.style.opacity = "1";
-        
+        arrow.style.animation = "jump"+ "0.8s"+ "infinite"+ "alternate-reverse";
+        arrow_text.style.animation = "jump 0.8s infinite alternate-reverse;"
     }
 })
 

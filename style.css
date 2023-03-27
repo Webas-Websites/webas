@@ -9,7 +9,7 @@
 html{
     scroll-behavior: smooth;
     background-color: white;
-    font-family: 'Libre Bodoni', serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 body{
@@ -371,6 +371,7 @@ transform: rotate(360deg);
     padding-top: 5vh;
     padding: 0 2rem;
     padding-bottom: 4vh;
+    font-family: 'Times New Roman', Times, serif;
   }
   .unterüberschrift.container-header{
     font-size: 1.6rem;
@@ -703,6 +704,7 @@ transform: rotate(360deg);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 7vh;
     
   }
   
@@ -853,7 +855,7 @@ footer {
       display: block;
     }
     .about-us__text{
-        font-size: 1rem;
+        font-size: 1.3rem;
         text-align: center;
         justify-content: center;
         /* text-align-last: left; */
